@@ -1,0 +1,10 @@
+<div id="navbar"></div> The navbar will be inserted here
+<script>
+    // Fetch and load the navbar component from the navbar.html file
+    fetch('components/navbar.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('navbar').innerHTML = data;
+        })
+        .catch(error => console.error('Error loading navbar:', error));
+</script>
